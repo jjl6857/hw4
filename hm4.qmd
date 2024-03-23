@@ -57,6 +57,10 @@ Automatic differentiation using `torch`
 
 ###### 1.1 (5 points)
 
+```{R}
+library(pracma)
+```
+
 Consider $g(x, y)$ given by
 
 $$
@@ -80,9 +84,7 @@ $$
 
 
 Define $g(x, y)$ as a function in R, compute the gradient of $g(x, y)$ with respect to $x=3$ and $y=4$. Does the answer match what you expected?
-```{R}
-library(pracma)
-```
+
 
 
 ```{R}
@@ -136,6 +138,9 @@ $$
 
 
 Define $h(\u, \v)$ as a function in R, initialize the two vectors $\u$ and $\v$ as `torch_tensor`s. Compute the gradient of $h(\u, \v)$ with respect to $\u$. Does the answer match what you expected?
+
+
+
 ```{R}
 u <- torch_tensor(c(-1, 1, -1, 1, -1, 1, -1, 1, -1, 1), dtype = torch_float32(), requires_grad = TRUE)
 v <- torch_tensor(c(-1, -1, -1, -1, -1, 1, 1, 1, 1, 1), dtype = torch_float32())
@@ -273,7 +278,7 @@ titanic_data <- df %>%
   rename(y = survived)
 
 
-titanic_data
+head(titanic_data)
 ```
 
 
@@ -422,9 +427,7 @@ overview(step_predictions, titanic_data$y)
 
 Using the `caret` package, setup a **$5$-fold cross-validation** training method using the `caret::trainConrol()` function
 
-```{R}
-library(caret)
-```
+
 
 
 ```{R}
@@ -472,7 +475,7 @@ lambda_grid <- 2^seq(-20, 0, by = 0.5)
 plot(log(lambda_grid, base = 2), lasso_fit$results$Accuracy, type = 'b', 
      xlab = expression(log[2](lambda)), ylab = "Cross-Validation Accuracy")
 ```
-# during the log2(lamda) value increase ,the cv accuracy slighly increase. at log2(lamda) approach -7.5 it geting the maxium of cv accuracy. but until log2(lamda) reach -5 and after. the cv accuracy value quickly going down about it. 
+# during the log2(lamda) value increase ,the cv accuracy also increase
 
 ---
 

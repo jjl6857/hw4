@@ -210,7 +210,7 @@
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, frame hidden, boxrule=0pt, interior hidden, breakable, borderline west={3pt}{0pt}{shadecolor}, enhanced]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, sharp corners, interior hidden, boxrule=0pt, breakable, borderline west={3pt}{0pt}{shadecolor}, enhanced]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
@@ -220,7 +220,7 @@
 }
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, opacitybacktitle=0.6, colbacktitle=quarto-callout-important-color!10!white, colframe=quarto-callout-important-color-frame, rightrule=.15mm, toptitle=1mm, left=2mm, titlerule=0mm, coltitle=black, opacityback=0, leftrule=.75mm, bottomtitle=1mm, arc=.35mm, toprule=.15mm, bottomrule=.15mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Important}, colback=white]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, left=2mm, coltitle=black, rightrule=.15mm, titlerule=0mm, colbacktitle=quarto-callout-important-color!10!white, toprule=.15mm, bottomrule=.15mm, opacityback=0, arc=.35mm, colframe=quarto-callout-important-color-frame, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Important}, opacitybacktitle=0.6, toptitle=1mm, breakable, bottomtitle=1mm, colback=white]
 
 Please read the instructions carefully before submitting your
 assignment.
@@ -391,38 +391,13 @@ Loading required package: broom
 \hypertarget{question-1}{%
 \subsection{Question 1}\label{question-1}}
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, opacitybacktitle=0.6, colbacktitle=quarto-callout-tip-color!10!white, colframe=quarto-callout-tip-color-frame, rightrule=.15mm, toptitle=1mm, left=2mm, titlerule=0mm, coltitle=black, opacityback=0, leftrule=.75mm, bottomtitle=1mm, arc=.35mm, toprule=.15mm, bottomrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{30 points}, colback=white]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, left=2mm, coltitle=black, rightrule=.15mm, titlerule=0mm, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, bottomrule=.15mm, opacityback=0, arc=.35mm, colframe=quarto-callout-tip-color-frame, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{30 points}, opacitybacktitle=0.6, toptitle=1mm, breakable, bottomtitle=1mm, colback=white]
 
 Automatic differentiation using \texttt{torch}
 
 \end{tcolorbox}
 
 1.1 (5 points)
-
-Consider \(g(x, y)\) given by
-
-\[
-g(x, y) = (x - 3)^2 + (y - 4)^2.
-\]
-
-Using elementary calculus derive the expressions for
-
-\[
-\frac{d}{dx}g(x, y), \quad \text{and} \quad \frac{d}{dy}g(x, y).
-\] \# d/dx(g(x,y)) = 2x-6 d/dy(g(x,y)) = 2y-8
-
-Using your answer from above, what is the answer to \[
-\frac{d}{dx}g(x, y) \Bigg|_{(x=3, y=4)} \quad \text{and} \quad \frac{d}{dy}g(x, y) \Bigg|_{(x=3, y=4)} ?
-\]
-
-\hypertarget{ddxgx3y4-23-6-0-ddygx3y4-24-8-0}{%
-\section{\texorpdfstring{d/dx(g(x=3,y=4)) = 2\emph{3-6 = 0
-d/dy(g(x=3,y=4)) = 2}4-8 =
-0}{d/dx(g(x=3,y=4)) = 23-6 = 0 d/dy(g(x=3,y=4)) = 24-8 = 0}}\label{ddxgx3y4-23-6-0-ddygx3y4-24-8-0}}
-
-Define \(g(x, y)\) as a function in R, compute the gradient of
-\(g(x, y)\) with respect to \(x=3\) and \(y=4\). Does the answer match
-what you expected? ::: \{.cell\}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -451,7 +426,30 @@ The following object is masked from 'package:purrr':
     cross
 \end{verbatim}
 
-:::
+Consider \(g(x, y)\) given by
+
+\[
+g(x, y) = (x - 3)^2 + (y - 4)^2.
+\]
+
+Using elementary calculus derive the expressions for
+
+\[
+\frac{d}{dx}g(x, y), \quad \text{and} \quad \frac{d}{dy}g(x, y).
+\] \# d/dx(g(x,y)) = 2x-6 d/dy(g(x,y)) = 2y-8
+
+Using your answer from above, what is the answer to \[
+\frac{d}{dx}g(x, y) \Bigg|_{(x=3, y=4)} \quad \text{and} \quad \frac{d}{dy}g(x, y) \Bigg|_{(x=3, y=4)} ?
+\]
+
+\hypertarget{ddxgx3y4-23-6-0-ddygx3y4-24-8-0}{%
+\section{\texorpdfstring{d/dx(g(x=3,y=4)) = 2\emph{3-6 = 0
+d/dy(g(x=3,y=4)) = 2}4-8 =
+0}{d/dx(g(x=3,y=4)) = 23-6 = 0 d/dy(g(x=3,y=4)) = 24-8 = 0}}\label{ddxgx3y4-23-6-0-ddygx3y4-24-8-0}}
+
+Define \(g(x, y)\) as a function in R, compute the gradient of
+\(g(x, y)\) with respect to \(x=3\) and \(y=4\). Does the answer match
+what you expected?
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -692,7 +690,7 @@ descent}\label{the-choice-of-learning-rate-is-crucial-for-the-performance-of-gra
 \hypertarget{question-2}{%
 \subsection{Question 2}\label{question-2}}
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, opacitybacktitle=0.6, colbacktitle=quarto-callout-tip-color!10!white, colframe=quarto-callout-tip-color-frame, rightrule=.15mm, toptitle=1mm, left=2mm, titlerule=0mm, coltitle=black, opacityback=0, leftrule=.75mm, bottomtitle=1mm, arc=.35mm, toprule=.15mm, bottomrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{50 points}, colback=white]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, left=2mm, coltitle=black, rightrule=.15mm, titlerule=0mm, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, bottomrule=.15mm, opacityback=0, arc=.35mm, colframe=quarto-callout-tip-color-frame, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{50 points}, opacitybacktitle=0.6, toptitle=1mm, breakable, bottomtitle=1mm, colback=white]
 
 Logistic regression and interpretation of effect sizes
 
@@ -739,25 +737,20 @@ i Specify the column types or set `show_col_types = FALSE` to quiet this message
   \FunctionTok{rename}\NormalTok{(}\AttributeTok{y =}\NormalTok{ survived)}
 
 
-\NormalTok{titanic\_data}
+\FunctionTok{head}\NormalTok{(titanic\_data)}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{verbatim}
-# A tibble: 887 x 8
-       y pclass name   sex     age siblings/spouses abo~1 parents/children abo~2
-   <dbl>  <dbl> <fct>  <fct> <dbl>                  <dbl>                  <dbl>
- 1     0      3 Mr. O~ male     22                      1                      0
- 2     1      1 Mrs. ~ fema~    38                      1                      0
- 3     1      3 Miss.~ fema~    26                      0                      0
- 4     1      1 Mrs. ~ fema~    35                      1                      0
- 5     0      3 Mr. W~ male     35                      0                      0
- 6     0      3 Mr. J~ male     27                      0                      0
- 7     0      1 Mr. T~ male     54                      0                      0
- 8     0      3 Maste~ male      2                      3                      1
- 9     1      3 Mrs. ~ fema~    27                      0                      2
-10     1      2 Mrs. ~ fema~    14                      1                      0
-# i 877 more rows
+# A tibble: 6 x 8
+      y pclass name    sex     age siblings/spouses abo~1 parents/children abo~2
+  <dbl>  <dbl> <fct>   <fct> <dbl>                  <dbl>                  <dbl>
+1     0      3 Mr. Ow~ male     22                      1                      0
+2     1      1 Mrs. J~ fema~    38                      1                      0
+3     1      3 Miss. ~ fema~    26                      0                      0
+4     1      1 Mrs. J~ fema~    35                      1                      0
+5     0      3 Mr. Wi~ male     35                      0                      0
+6     0      3 Mr. Ja~ male     27                      0                      0
 # i abbreviated names: 1: `siblings/spouses aboard`,
 #   2: `parents/children aboard`
 # i 1 more variable: fare <dbl>
@@ -881,7 +874,7 @@ factors.}\label{from-estimate-and-interpret-the-significant-predictors-of-surviv
 \hypertarget{question-3}{%
 \subsection{Question 3}\label{question-3}}
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, opacitybacktitle=0.6, colbacktitle=quarto-callout-tip-color!10!white, colframe=quarto-callout-tip-color-frame, rightrule=.15mm, toptitle=1mm, left=2mm, titlerule=0mm, coltitle=black, opacityback=0, leftrule=.75mm, bottomtitle=1mm, arc=.35mm, toprule=.15mm, bottomrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{70 points}, colback=white]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, left=2mm, coltitle=black, rightrule=.15mm, titlerule=0mm, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, bottomrule=.15mm, opacityback=0, arc=.35mm, colframe=quarto-callout-tip-color-frame, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{70 points}, opacitybacktitle=0.6, toptitle=1mm, breakable, bottomtitle=1mm, colback=white]
 
 Variable selection and logistic regression in \texttt{torch}
 
@@ -1065,12 +1058,6 @@ cross-validation} training method using the
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\FunctionTok{library}\NormalTok{(caret)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \NormalTok{controls }\OtherTok{\textless{}{-}} \FunctionTok{trainControl}\NormalTok{(}\AttributeTok{method=}\StringTok{"cv"}\NormalTok{, }\AttributeTok{number=}\DecValTok{5}\NormalTok{) }\CommentTok{\# ... insert your code here}
 \end{Highlighting}
 \end{Shaded}
@@ -1203,51 +1190,51 @@ glmnet
 
 No pre-processing
 Resampling: Cross-Validated (5 fold) 
-Summary of sample sizes: 710, 710, 710, 709, 709 
+Summary of sample sizes: 710, 710, 709, 709, 710 
 Resampling results across tuning parameters:
 
-  lambda        RMSE       Rsquared   MAE      
-  9.536743e-07  1.2824843  0.1557107  1.0963074
-  1.348699e-06  1.2824843  0.1557107  1.0963074
-  1.907349e-06  1.2824843  0.1557107  1.0963074
-  2.697398e-06  1.2824843  0.1557107  1.0963074
-  3.814697e-06  1.2824843  0.1557107  1.0963074
-  5.394797e-06  1.2824843  0.1557107  1.0963074
-  7.629395e-06  1.2824843  0.1557107  1.0963074
-  1.078959e-05  1.2824843  0.1557107  1.0963074
-  1.525879e-05  1.2824843  0.1557107  1.0963074
-  2.157919e-05  1.2824843  0.1557107  1.0963074
-  3.051758e-05  1.2824843  0.1557107  1.0963074
-  4.315837e-05  1.2824843  0.1557107  1.0963074
-  6.103516e-05  1.2824843  0.1557107  1.0963074
-  8.631675e-05  1.2824843  0.1557107  1.0963074
-  1.220703e-04  1.2824843  0.1557107  1.0963074
-  1.726335e-04  1.2824843  0.1557107  1.0963074
-  2.441406e-04  1.2824843  0.1557107  1.0963074
-  3.452670e-04  1.2824843  0.1557107  1.0963074
-  4.882812e-04  1.2824843  0.1557107  1.0963074
-  6.905340e-04  1.2824843  0.1557107  1.0963074
-  9.765625e-04  1.2824843  0.1557107  1.0963074
-  1.381068e-03  1.2793781  0.1557381  1.0938872
-  1.953125e-03  1.2733711  0.1557011  1.0892199
-  2.762136e-03  1.2650876  0.1556317  1.0827570
-  3.906250e-03  1.2538263  0.1554963  1.0738862
-  5.524272e-03  1.2387259  0.1552312  1.0619439
-  7.812500e-03  1.2189601  0.1547005  1.0462265
-  1.104854e-02  1.1938797  0.1536638  1.0269235
-  1.562500e-02  1.1626180  0.1524057  1.0031296
-  2.209709e-02  1.1272935  0.1490765  0.9769955
-  3.125000e-02  1.0906842  0.1462989  0.9525989
-  4.419417e-02  1.0517460  0.1414355  0.9295404
-  6.250000e-02  1.0192637  0.1265126  0.9055859
-  8.838835e-02  0.9911512  0.1176300  0.8741273
-  1.250000e-01  0.9734906  0.1172727  0.8573649
-  1.767767e-01  0.9804214        NaN  0.8520670
-  2.500000e-01  0.9804214        NaN  0.8520670
-  3.535534e-01  0.9804214        NaN  0.8520670
-  5.000000e-01  0.9804214        NaN  0.8520670
-  7.071068e-01  0.9804214        NaN  0.8520670
-  1.000000e+00  0.4889597        NaN  0.4759700
+  lambda        RMSE       Rsquared    MAE      
+  9.536743e-07  1.2765642  0.16662435  1.0883331
+  1.348699e-06  1.2765642  0.16662435  1.0883331
+  1.907349e-06  1.2765642  0.16662435  1.0883331
+  2.697398e-06  1.2765642  0.16662435  1.0883331
+  3.814697e-06  1.2765642  0.16662435  1.0883331
+  5.394797e-06  1.2765642  0.16662435  1.0883331
+  7.629395e-06  1.2765642  0.16662435  1.0883331
+  1.078959e-05  1.2765642  0.16662435  1.0883331
+  1.525879e-05  1.2765642  0.16662435  1.0883331
+  2.157919e-05  1.2765642  0.16662435  1.0883331
+  3.051758e-05  1.2765642  0.16662435  1.0883331
+  4.315837e-05  1.2765642  0.16662435  1.0883331
+  6.103516e-05  1.2765642  0.16662435  1.0883331
+  8.631675e-05  1.2765642  0.16662435  1.0883331
+  1.220703e-04  1.2765642  0.16662435  1.0883331
+  1.726335e-04  1.2765642  0.16662435  1.0883331
+  2.441406e-04  1.2765642  0.16662435  1.0883331
+  3.452670e-04  1.2765642  0.16662435  1.0883331
+  4.882812e-04  1.2765642  0.16662435  1.0883331
+  6.905340e-04  1.2765642  0.16662435  1.0883331
+  9.765625e-04  1.2765642  0.16662435  1.0883331
+  1.381068e-03  1.2732603  0.16666803  1.0857606
+  1.953125e-03  1.2672280  0.16672229  1.0810217
+  2.762136e-03  1.2589155  0.16677909  1.0744185
+  3.906250e-03  1.2476207  0.16681643  1.0655210
+  5.524272e-03  1.2324944  0.16677922  1.0535816
+  7.812500e-03  1.2127144  0.16653373  1.0380756
+  1.104854e-02  1.1877160  0.16575846  1.0186122
+  1.562500e-02  1.1577246  0.16366845  0.9957295
+  2.209709e-02  1.1238904  0.15911873  0.9705624
+  3.125000e-02  1.0866357  0.15592212  0.9464451
+  4.419417e-02  1.0482048  0.14904688  0.9256588
+  6.250000e-02  1.0173069  0.12664081  0.9044019
+  8.838835e-02  0.9899110  0.11817365  0.8734208
+  1.250000e-01  0.9713288  0.11830867  0.8536675
+  1.767767e-01  0.9798842  0.04088769  0.8514613
+  2.500000e-01  0.9805836         NaN  0.8517971
+  3.535534e-01  0.9805836         NaN  0.8517971
+  5.000000e-01  0.9805836         NaN  0.8517971
+  7.071068e-01  0.9805836         NaN  0.8517971
+  1.000000e+00  0.4878812         NaN  0.4749117
 
 Tuning parameter 'alpha' was held constant at a value of 1
 RMSE was used to select the optimal model using the smallest value.
@@ -1274,18 +1261,15 @@ optimal \(\lambda^*\), and report your results for this value of
 
 \begin{figure}[H]
 
-{\centering \includegraphics{hm4_files/figure-pdf/unnamed-chunk-24-1.pdf}
+{\centering \includegraphics{hm4_files/figure-pdf/unnamed-chunk-23-1.pdf}
 
 }
 
 \end{figure}
 
-\hypertarget{during-the-log2lamda-value-increase-the-cv-accuracy-slighly-increase.-at-log2lamda-approach--7.5-it-geting-the-maxium-of-cv-accuracy.-but-until-log2lamda-reach--5-and-after.-the-cv-accuracy-value-quickly-going-down-about-it.}{%
-\section{during the log2(lamda) value increase ,the cv accuracy slighly
-increase. at log2(lamda) approach -7.5 it geting the maxium of cv
-accuracy. but until log2(lamda) reach -5 and after. the cv accuracy
-value quickly going down about
-it.}\label{during-the-log2lamda-value-increase-the-cv-accuracy-slighly-increase.-at-log2lamda-approach--7.5-it-geting-the-maxium-of-cv-accuracy.-but-until-log2lamda-reach--5-and-after.-the-cv-accuracy-value-quickly-going-down-about-it.}}
+\hypertarget{during-the-log2lamda-value-increase-the-cv-accuracy-also-increase}{%
+\section{during the log2(lamda) value increase ,the cv accuracy also
+increase}\label{during-the-log2lamda-value-increase-the-cv-accuracy-also-increase}}
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -1354,11 +1338,11 @@ the following code is a vector of probabilities:
 
 \begin{verbatim}
 torch_tensor
- 0.0106
+ 0.1982
  1.0000
- 0.0195
  0.5000
- 0.0006
+ 0.5000
+ 0.5000
  0.5000
 [ CPUFloatType{6,1} ][ grad_fn = <SliceBackward0> ]
 \end{verbatim}
@@ -1403,16 +1387,16 @@ using \texttt{torch}.
 \end{Shaded}
 
 \begin{verbatim}
-Iteration:  100  Loss:  4.600117 
-Iteration:  200  Loss:  4.768023 
-Iteration:  300  Loss:  4.609679 
-Iteration:  400  Loss:  4.44934 
-Iteration:  500  Loss:  4.758768 
-Iteration:  600  Loss:  4.93 
-Iteration:  700  Loss:  5.209866 
-Iteration:  800  Loss:  4.979812 
-Iteration:  900  Loss:  4.399556 
-Iteration:  1000  Loss:  4.714816 
+Iteration:  100  Loss:  9.641179 
+Iteration:  200  Loss:  8.754433 
+Iteration:  300  Loss:  8.593785 
+Iteration:  400  Loss:  9.358589 
+Iteration:  500  Loss:  9.392714 
+Iteration:  600  Loss:  9.541448 
+Iteration:  700  Loss:  9.58147 
+Iteration:  800  Loss:  9.138812 
+Iteration:  900  Loss:  9.444464 
+Iteration:  1000  Loss:  10.10792 
 \end{verbatim}
 
 Using the final, optimized parameters of \texttt{f}, compute the compute
@@ -1464,7 +1448,7 @@ comment on their relative strengths and drawbacks.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, opacitybacktitle=0.6, colbacktitle=quarto-callout-note-color!10!white, colframe=quarto-callout-note-color-frame, rightrule=.15mm, toptitle=1mm, left=2mm, titlerule=0mm, coltitle=black, opacityback=0, leftrule=.75mm, bottomtitle=1mm, arc=.35mm, toprule=.15mm, bottomrule=.15mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Session Information}, colback=white]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, left=2mm, coltitle=black, rightrule=.15mm, titlerule=0mm, colbacktitle=quarto-callout-note-color!10!white, toprule=.15mm, bottomrule=.15mm, opacityback=0, arc=.35mm, colframe=quarto-callout-note-color-frame, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Session Information}, opacitybacktitle=0.6, toptitle=1mm, breakable, bottomtitle=1mm, colback=white]
 
 Print your \texttt{R} session information using the following command
 

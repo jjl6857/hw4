@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.2.1)  22 MAR 2024 23:02
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.2.1)  22 MAR 2024 23:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1146,23 +1146,23 @@ Missing character: There is no ️ (U+FE0F) in font [lmroman10-regular]:mapping=
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before break' or set page breaks manually on input line 398.
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.665pt on input line 402.
+(Font)              scaled to size 7.665pt on input line 429.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.475pt on input line 402.
+(Font)              scaled to size 5.475pt on input line 429.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.95099pt on input line 402.
+(Font)              scaled to size 10.95099pt on input line 429.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.66568pt on input line 402.
+(Font)              scaled to size 7.66568pt on input line 429.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.4755pt on input line 402.
+(Font)              scaled to size 5.4755pt on input line 429.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.94882pt on input line 402.
+(Font)              scaled to size 10.94882pt on input line 429.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.66417pt on input line 402.
+(Font)              scaled to size 7.66417pt on input line 429.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.47441pt on input line 402.
+(Font)              scaled to size 5.47441pt on input line 429.
 LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <14.4> not available
-(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 421.
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 448.
 [4]
 
 ! LaTeX Error: Command \u already defined.
@@ -1172,7 +1172,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.480 \newcommand{\u}{\boldsymbol{u}}
+l.478 \newcommand{\u}{\boldsymbol{u}}
                                      \newcommand{\v}{\boldsymbol{v}} 
 Here is how much of TeX's memory you used:
  38857 strings out of 476857
@@ -1181,6 +1181,6 @@ Here is how much of TeX's memory you used:
  60220 multiletter control sequences out of 15000+600000
  564532 words of font info for 90 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 108i,8n,120p,10898b,1025s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,7n,120p,10898b,1025s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on hm4.pdf (4 pages).
